@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aprenda Mais</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/site.html#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>GitHub</p>
+  </a>
+  <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/pytest.html#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Pytest</p>
+  </a>
+  <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/flasck.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>flasck</p>
+  </a>
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/site.html#about" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/pytest.html#" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="file:///C:/Users/camil/Desktop/projeto_final_tp/flasck.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Pytest</h1>
+    <p>Entenda a sua importancia para programadores</p>
+    <img src="data:image/png;base64,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" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Mas o que é o Git</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Em resumo, trata-se de um serviço baseado em nuvem que hospeda um sistema de controle de versão chamado Git. Assim , ele possibilita que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.</h5>
+
+    </p>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Mas antes de tudo... O que é GitHub?</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>trata-se de uma ferramenta que auxilia programadores em seus projetos. Para isso, os desenvolvedores criam um novo projeto, eles continuam criando atualizações no código base. Mesmo depois de o projeto ser lançado, é até comum a atualização de versões, correção de bugs, adição de novas ferramentas, etc. O sistema de controle de versão ajuda a acompanhar as mudanças feitas no código base. E mais, ele também registra quem efetuou a mudança e permite a restauração do código removido ou modificado.</h5>
+    
+        </p>
+   
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Não fique confuso, aqui esta a diferença entre os dois</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">GitHub</li>
+          <li class="w3-padding-16"> plataforma</li>
+          <li class="w3-padding-16">compartilhamento</li>
+          <li class="w3-padding-16">hospedagem de códigos</li>
+          <li class="w3-padding-16">interação com a comunidade como uma "rede social"</li>
+          <li class="w3-padding-16">
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Git</li>
+          <li class="w3-padding-16">sistema</li>
+          <li class="w3-padding-16">desenvolvimento</li>
+          <li class="w3-padding-16">controla versões</li>
+          <li class="w3-padding-16">as operações são realizadas de maneira local</li>
+          <li class="w3-padding-16">
+            
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Github, um pouco mais sobre a plataforma</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://img-0.journaldunet.com/wysDOLHT98QokykwJzzEzJckCng=/1500x/smart/a07f93d69f724ad1b14a63f06d0cbbd3/ccmcms-jdn/35892765.jpeg" style="width:100%">
+        <img src="imagens/github.png" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://rodrigoavalente.github.io/assets/images/steroidtocat.png" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Saiba mais sobre > <a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank">Clique Aqui</a>.</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+</body>
+</html>
